@@ -1,27 +1,28 @@
 import React from 'react'
 import {Bookmark} from 'lucide-react'
 
-const Card = () => {
+const Card = (props) => {
+  console.log(props.company)
   return (
     <div className='card'>
         <div>
           <div className='top'>
-          <img src="data:image/jpeg;base64,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" alt="" />
+             <img src={props.brandLogo} alt={props.company} />
           <button> Save <Bookmark size={15} /> </button>
           </div>
           <div className='center'>
-          <h3>Amazon <span>5 days ago</span></h3>
-          <h2>Senior UI/UX Designer</h2>
+          <h3> {props.company}<span>{props.datePosted}</span></h3>
+          <h2>{props.designation}</h2>
           </div>
         </div>
           <div className='tag'>      
-            <h3>Part Time</h3>
-            <h3>Senior Level</h3>
+            <h3>{props.tag}</h3>
+            <h3>{props.tag2}</h3>
           </div>
         <div className='bottom'>
             <div>
-             <h3> $1200/hr </h3>
-             <p>Mumbai ,India</p> 
+             <h3> {props.pay} </h3>
+             <p>{props.location}</p> 
             </div>
             <button>Apply Now</button>
           </div>
