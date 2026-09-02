@@ -2,9 +2,7 @@ import React from 'react'
 
 const Section2 = () => {
   return (
-    <div >
-      
-    </div>
+    <div className='h-screen w-full bg-gray-900'>Section2</div>
   )
 }
 
