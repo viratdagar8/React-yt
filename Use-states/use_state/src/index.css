@@ -1,0 +1,57 @@
+/* Style the counter container */
+#counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light gray background */
+  font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Style the heading displaying the number */
+#counter h1 {
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Style all buttons inside #counter */
+#counter button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+#counter button:hover {
+  background-color: #45a049;
+}
+
+/* Optional: Different styles for different buttons */
+button:nth-child(2) {
+  background-color: #2196F3; /* Blue for Decrease */
+}
+button:nth-child(3) {
+  background-color: #ff9800; /* Orange for Square */
+}
+button:nth-child(4) {
+  background-color: #f44336; /* Red for Reset */
+}
+
+button:nth-child(2):hover {
+  background-color: #0b7dda;
+}
+button:nth-child(3):hover {
+  background-color: #e68a00;
+}
+button:nth-child(4):hover {
+  background-color: #da190b;
+}
